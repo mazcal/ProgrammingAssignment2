@@ -1,5 +1,5 @@
 ## This set handles creating a matrix and calculating its inverse
-## It uses  cache to avoid duplicate calculations for the same matrix.
+## It uses cache to avoid duplicate calculations for the same matrix.
 
 ## This function creates a special matrix object
 ## that can cache its inverse.
@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function returns the inverse of a matrix from cache
 ## or calculates it when needed
 cacheSolve <- function(x) {
-        ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
   if (!is.null(inv)) {
     message("Getting cached data")
